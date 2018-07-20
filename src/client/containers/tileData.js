@@ -4,6 +4,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
+import CardTravel from '@material-ui/icons/CardTravel';
+import LocalShipping from '@material-ui/icons/LocalShipping';
+
+
+
+
 import DraftsIcon from '@material-ui/icons/Drafts';
 import StarIcon from '@material-ui/icons/Star';
 import SendIcon from '@material-ui/icons/Send';
@@ -35,13 +41,13 @@ export const mailFolderListItems = (
     </ListItem>
     <ListItem button component={Link} to='/marketing-analyst'>
       <ListItemIcon>
-      <SendIcon />
+      <CardTravel />
       </ListItemIcon>
       <ListItemText primary="Marketing Analyst" />
     </ListItem>
     <ListItem button component={Link} to='/supply-chain'>
       <ListItemIcon>
-      <DraftsIcon />
+      <LocalShipping />
       </ListItemIcon>
       <ListItemText primary="Supply Chain" />
     </ListItem>
