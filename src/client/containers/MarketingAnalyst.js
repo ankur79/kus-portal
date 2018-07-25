@@ -53,10 +53,12 @@ class MarketingAnalyst extends Component {
 
           <Typography color="textSecondary">{this.state.crumbsList}</Typography>
           <MuiThemeProvider>
-            <MapView
-              handleShow={(modalContent) => this.handleShow(modalContent)}
-              breadCrumbs={(crumbs) => this.breadCrumbs(crumbs)}
-            />
+            <div>
+              <MapView
+                handleShow={(modalContent) => this.handleShow(modalContent)}
+                breadCrumbs={(crumbs) => this.breadCrumbs(crumbs)}
+              />
+            </div>
           </MuiThemeProvider>
         </div>
       </div>

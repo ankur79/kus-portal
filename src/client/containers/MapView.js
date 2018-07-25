@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Map, TileLayer, Marker, Popup, GeoJSON} from 'react-leaflet';
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Paper from '@material-ui/core/Paper';
 import L from 'leaflet';
 import GEOJSON from '../json/stateData.json';
@@ -230,11 +231,9 @@ export default class MapView extends Component {
   render() {
     const position = [this.state.lat, this.state.lng];
     return (
-      <React.Fragment>
-        <div>
-          <Map center={position} zoom={this.state.zoom} ref="map" />
-        </div>
-      </React.Fragment>
+      <div>
+        <Map center={position} zoom={this.state.zoom} ref="map" />
+      </div>
     );
   }
 }
